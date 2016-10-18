@@ -11,6 +11,7 @@
 	
 	存在着cas的登录后的用户信息，放在session里。
 `
+
 final Assertion assertion = request.getSession() != null ? (Assertion)request.getSession().getAttribute(AbstractCasFilter.CONST_CAS_ASSERTION) : null;
 ` 
 
